@@ -1,5 +1,6 @@
+# SigNature
 ## About 
-This project uses the Pose Animator library[1] to produce an NFT when 1 actor interacts with 1 or more actors. The NFT acts as an acknowledgment of the interaction. Interaction can mean various things:
+This project (SigNature) uses the Pose Animator library[1] to produce an NFT when 1 actor interacts with 1 or more actors. The NFT acts as an acknowledgment of the interaction. Interaction can mean various things:
 
 - Meeting a certain actor ( perhaps a famous individual )
 - Receipt of something ( a digital certificate for course completion )
