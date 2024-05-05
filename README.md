@@ -33,7 +33,8 @@ This project (SigNature) aims to focus on interactions leading to an agreement. 
 
 ## Design
 ### Architecture 
-Description 
+[IMAGE]
+### Description 
 
 SigNature is a WebRTC application that uses the Pose Animator for the interaction between users. 
 
