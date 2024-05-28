@@ -44,7 +44,7 @@ Let's look at how a user interacts with the DApp.
 - Posenet model
 - Web RTC 
 - Thirdweb SDK
-- Fabric.js
+- Paper.js
 
 ## Design
 ### Architecture 
