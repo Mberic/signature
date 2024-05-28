@@ -42,7 +42,7 @@ Let's look at how a user interacts with the DApp.
 ## Tools 
 
 - Posenet model
-- Google Meet API
+- Web RTC 
 - Thirdweb SDK
 - Fabric.js
 
