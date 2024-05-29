@@ -1,7 +1,7 @@
 # SigNature
 ## About 
 
-This project uses the [Pose estimation](https://www.tensorflow.org/lite/examples/pose_estimation/overview#:~:text=Pose%20estimation%20is%20the%20task,key%20body%20joints%20(keypoints).) to animate human movements when 2 or more actors interact with each other. The captured animation is used to create an NFT. 
+This project uses [Pose estimation](https://www.tensorflow.org/lite/examples/pose_estimation/overview#:~:text=Pose%20estimation%20is%20the%20task,key%20body%20joints%20(keypoints).) to animate human movements when 2 or more actors interact with each other. The captured animation is used to create an NFT. 
 
 The NFT acts as an acknowledgment of an interaction. Interaction can mean various things:
 
@@ -20,6 +20,16 @@ For example, one can still be expressive when digitally signing an agreement. Th
 As shown above, many possible use cases exist for NFT generation using pose estimation + animations. 
 
 However, **the project in this repo will be about the generation of Commemorative NFTs.** The project is called SigNature ( pronounced Sign-Nature ).
+
+The target areas for generating commemorative NFTs are: 
+
+- prize-giving ceremony after a hackathon
+- player interaction after a tournament/ game
+
+The intention for these target areas is to encourage:
+
+1) the community <> contributors to use this for NFT generation
+2) game  developers to integrate this 
 
 ## Motivation 
 This project was partly inspired by my previous project, whose aim was to ensure that *NFT objects could interact with each other* (i.e. digitally alive). The project, called [DNN](https://github.com/Mberic/dnn) (Digital Native NFTs), was a Prize Pool winner for the Cartesi 2024 Hackathon. 
@@ -48,7 +58,7 @@ Let's look at how a user interacts with the DApp.
 
 ## Design
 ### Architecture 
-[IMAGE]
+![architecture diagram](signature-architecture.jpg)
 ### Description 
 
 SigNature is a video communication app which uses **Pose Animation to generate an NFT from the digital interaction** between users. 
