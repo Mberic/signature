@@ -42,12 +42,18 @@ However, after some research, I realized that using a pose estimation ML model c
 
 Let's look at how a user interacts with the DApp. 
 
-1. A host creates a new meeting & then shares the link.
-2. When both participants have joined the meeting, the pose estimation model loads
-3. Each user chooses (or creates) an animation that they will control with their body movements 
-4. One user starts recording the session. 
-5. After recording the intended digital interaction, the host (or co-host) stops the recording. A section of the video is stored
-6. This section is used to generate an NFT. Both users sign a transaction with their wallet & send it to the blockchain 
+1. Clone the repo. Run the 3 commands below to start the app: 
+```sh
+yarn 
+pnpm install 
+pnpm watch 
+```
+2. A random peer ID will be assigned to you.
+3. The ML models will begin loading. Afterward, your browser will ask for permission to use your webcam. Accept
+4. A pre-designed SVG illustration will show up on the screen. This illustration will update as you make movements
+5. You can “Start recording” to capture on-screen actions
+6. Stop recording when satisfied. The browser will auto-download the video (**nft.webm**).
+7. This video is your NFT. You can send to the `InputBox` contract using your wallet
 
 ## Tools 
 
