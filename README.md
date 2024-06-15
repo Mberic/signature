@@ -54,6 +54,7 @@ pnpm watch
 This will start the server at `http://localhost:1234/` . You should see a page like the one below:  
 
 ![landing page](landing-page.png)
+
 2. A random peer ID will be assigned to you. 
 3. The ML models will begin loading. Afterward, your browser will ask for permission to use your webcam. Accept
 4. A pre-designed SVG illustration will show up on the screen. This illustration will update as you make movements
