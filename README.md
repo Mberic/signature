@@ -44,14 +44,20 @@ Let's look at how a user interacts with the DApp.
 
 **Note:** You need an active internet connection for the DApp to run. PeerJS requires this to randomly assign Peer IDs.
 
-1. Clone the repo. Run the 3 commands below to start the app: 
+1. Clone the repo. Run the commands below to start the app: 
 ```sh
 yarn 
-pnpm install 
-pnpm watch 
+yarn watch 
 ```
 
-This will start the server at `http://localhost:1234/` . You should see a page like the one below:  
+**Tip**: In case you run into errors after running `yarn`, you may be lacking build tools on your system. Install them as below:
+
+```sh
+sudo apt-get update
+sudo apt-get install build-essential
+```
+
+If everything has worked out as expected, you should have a server running at `http://localhost:1234/` . You should see a page like the one below:  
 
 ![landing page](landing-page.png)
 
