@@ -104,8 +104,11 @@ The whole point of storing them on the blockchain is to act as a **commitment** 
 
 ## Future developments 
 
-- Fractional NFT management 
-- Use voice recognition to capture handshake when in position
+- Asset management
+- Signature aggregation 
+- Marketplace 
+- SVG drawing canvas. To allow creators to make custom illustrations that they'll use in the DApp 
+- *Use 3D illustrations instead of 2D (Currently, researching the feasibility of this)
 
 ## References 
 - [Pose estimation](https://www.tensorflow.org/lite/examples/pose_estimation/overview#:~:text=Pose%20estimation%20is%20the%20task,key%20body%20joints%20(keypoints).)
