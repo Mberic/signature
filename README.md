@@ -44,6 +44,7 @@ However, after some research, I realized that using a pose estimation ML model c
 **NOTE:** This description in this "How it works" section is meant to show that the idea is feasible. However, it doesn't include any W3bstream components. 
 
 The description of how the DApp would work with the W3bstream component is shown in the architecture diagram.
+
 -----------
 
 Let's look at how a user interacts with the DApp. 
