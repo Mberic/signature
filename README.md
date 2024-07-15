@@ -40,6 +40,12 @@ However, after some research, I realized that using a pose estimation ML model c
 
 ## How it Works
 
+-------------------
+**NOTE:** This description in this "How it works" section is meant to show that the idea is feasible. However, it doesn't include any W3bstream components. 
+
+The description of how the DApp would work with the W3bstream component is shown in the architecture diagram.
+-----------
+
 Let's look at how a user interacts with the DApp. 
 
 **Note:** You need an active internet connection for the DApp to run. PeerJS requires this to randomly assign Peer IDs.
@@ -76,39 +82,24 @@ Here's an example frame when there are 2 peers:
 
 ## Tools 
 
-- Posenet model
-- Web RTC 
-- Thirdweb SDK
-- Paper.js
+- [Posenet model](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection) - to generate Pose objects from video feed. Pose objects are key points of the human body
+- [PeerJS](https://peerjs.com/) - to connect 2 peers
+- Paper.js - to animate the SVG images using the Pose objects
 
 ## Design
 ### Architecture 
-![architecture diagram](signature-architecture.jpg)
+![architecture diagram](webstream-signature.jpg)
 ### Description 
 
-SigNature is a video communication app which uses **Pose Animation to generate an NFT from the digital interaction** between users. 
+SigNature is a video communication app which uses **Pose Animation to generate an NFT from the digital interaction** between users. We use the term **Pose animation** to mean creating animations from Pose estimation.
 
-There can optionally be some data (text) as part of the interaction. This can optionally be encrypted and sent to the blockchain. The data never has to be decrypted on the blockchain. 
+There can optionally be some data (text) as part of the interaction. This message can be something like: “0xdea shook hands with 0xbeef at 12:15 UTC. Oxdea has been awarded for his participation in the hackathon.”
 
-The whole point of storing them on the blockchain is to act as a **commitment** in our commit-reveal scheme. Later, if there's a disagreement on the nature of the contents/terms, the data can be decrypted off-chain ( or on-chain, if necessary) to **reveal** the contents. 
 
 ## Features 
 
 - Real-time interaction (i.e generation of an "interaction NFT")
 - After the prize-giving ceremony, partcipants can share the ceremony moments on social media platforms. This wouldn't be possible if our perception of a digital agreement was restricted to the cryptography. 
-
-## DApp Monetization 
-
-- Charge a small platform fee for any NFT transfers
-- A small fee for NFT generation to prevent sybil attacks
-
-## Future developments 
-
-- Asset management
-- Signature aggregation 
-- Marketplace 
-- SVG drawing canvas. To allow creators to make custom illustrations that they'll use in the DApp 
-- *Use 3D illustrations instead of 2D (Currently, researching the feasibility of this)
 
 ## References 
 - [Pose estimation](https://www.tensorflow.org/lite/examples/pose_estimation/overview#:~:text=Pose%20estimation%20is%20the%20task,key%20body%20joints%20(keypoints).)
