@@ -32,7 +32,7 @@ If everything has worked out as expected, you should have a server running at `h
 4. A pre-designed SVG illustration will show up on the screen. This illustration will update as you make movements
 5. You can “Start recording” to capture on-screen actions
 6. Stop recording when satisfied. The browser will auto-download the video (**nft.webm**).
-7. This video is your NFT. You can send to the `InputBox` contract using your wallet
+7. This video is your NFT.
 
 The "intended" use-case for this DApp is when there 2 peers. However, you can still interact with it alone (as described in the steps above). To use it with another peer, simply request for their PeerID and & place it in "Connect to ID" input box & press the Connect button. The other peer's illustration should also show up on the screen & its position changes according to the Peer's actions. 
 
