@@ -57,6 +57,19 @@ SigNature is a video communication app which uses **Pose Animation to generate a
 
 There can optionally be some data (text) as part of the interaction. This message can be something like: “0xdea shook hands with 0xbeef at 12:15 UTC. Oxdea has been awarded for his participation in the hackathon.”
 
+-----
+
+How the DApp runs
+
+----
+
+1. Two peers connect via video communication [ PeerJS lib ]
+2. After both have joined the call, they initiate sending of video feed data to the W3bstream network 
+3. At the W3bstream node, we run a Posenet model there. This model detects the key body points for each peer. When our Applet detects poses for 2 peers in a given interaction session, it calls our contract to generate an Interaction NFT.
+4. These key body points (poses) are sent back to both peers.
+5. These poses are used to control the SVG animations of each peer in real time [ PaperJS lib ]
+6. Each peer can screen record the animation on their webpage & download a video (nft.webm) for this interaction 
+7. This video is each peer's NFT 
 
 ## Features 
 
