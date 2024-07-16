@@ -57,11 +57,7 @@ SigNature is a video communication app which uses **Pose Animation to generate a
 
 There can optionally be some data (text) as part of the interaction. This message can be something like: “0xdea shook hands with 0xbeef at 12:15 UTC. Oxdea has been awarded for his participation in the hackathon.”
 
------
-
-How the DApp runs
-
-----
+### How the DApp runs
 
 1. Two peers connect via video communication [ PeerJS lib ]
 2. After both have joined the call, they initiate sending of video feed data to the W3bstream network 
