@@ -14,12 +14,12 @@ The NFT acts as an acknowledgment of an interaction. Interaction can mean variou
 *This approach (of NFT generation) aims to preserve the aspects of human interaction that would exist in a physical environment when interacting from a digital one.*
 
 
-For example, one can still be expressive when digitally signing an agreement. The NFT generated from the metadata of this interaction would be the proof of the underlying agreement. 
+For example, one can still be expressive during a digital agreement. The NFT generated from the metadata of this interaction would be the proof of the underlying agreement. 
 
 ### Focus
 As shown above, many possible use cases exist for NFT generation using pose estimation + animations. 
 
-However, **the project in this repo will be about the generation of Commemorative NFTs.** The project is called SigNature ( pronounced Sign-Nature ).
+**This project will focus on the generation of Commemorative NFTs.** The project is called SigNature ( pronounced Sign-Nature ).
 
 The target areas for generating commemorative NFTs are: 
 
@@ -61,15 +61,15 @@ There can optionally be some data (text) as part of the interaction. This messag
 
 1. Two peers connect via video communication [ PeerJS lib ]
 2. After both have joined the call, they initiate sending of video feed data to the W3bstream network 
-3. At the W3bstream node, we run a Posenet model there. This model detects the key body points for each peer. When our Applet detects poses for 2 peers in a given interaction session, it calls our contract to generate an Interaction NFT.
+3. At the W3bstream node, we run a Posenet model there. This model detects the key body points for each peer. When our Applet detects poses for 2 peers in a given interaction session, it calls our contract to generate an **Interaction NFT**. 
 4. These key body points (poses) are sent back to both peers.
-5. These poses are used to control the SVG animations of each peer in real time [ PaperJS lib ]
-6. Each peer can screen record the animation on their webpage & download a video (nft.webm) for this interaction 
+5. These poses are used to control the SVG animations of each peer in real-time [ PaperJS lib ]
+6. Each peer can screen record the animation on their webpage & download a video (**nft.webm**) for this interaction 
 7. This video is each peer's NFT 
 
 ## Features 
 
-- Real-time interaction (i.e generation of an "interaction NFT")
+- Real-time interaction (i.e generation of an **Interaction NFT**)
 - After the prize-giving ceremony, partcipants can share the ceremony moments on social media platforms. This wouldn't be possible if our perception of a digital agreement was restricted to the cryptography. 
 
 ## References 
